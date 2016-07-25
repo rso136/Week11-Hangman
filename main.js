@@ -29,7 +29,7 @@ function prompt() {
 			})
 	}
 
-function Word(wrd) {
+var Word = function (wrd) {
 	this.word = wrd;
 	this.wordBank = [];
 	this.lettersToBank = function() {
@@ -47,7 +47,7 @@ function Word(wrd) {
 };
 	
 
-function Letters(lttr) {	
+var Letters = function(lttr) {	
 	
 	this.letter = lttr;
 	this.checkLetters = function() {
